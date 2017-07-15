@@ -1,0 +1,24 @@
+{
+  "name": "vue-h5-ripple",
+  "version": "1.0.0",
+  "description": "vue 水波纹效果",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linevers1926/vue-h5-ripple.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-h5-ripple",
+    "ripple"
+  ],
+  "author": "linevers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/linevers1926/vue-h5-ripple/issues"
+  },
+  "homepage": "https://github.com/linevers1926/vue-h5-ripple#readme"
+}

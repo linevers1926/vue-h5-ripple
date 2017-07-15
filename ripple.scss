@@ -1,0 +1,36 @@
+.touch-wrap {
+  position: relative;
+}
+.touch-ripple {
+  display: block;
+  overflow: hidden;
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  /*Forces webkit to properly contain content within border-radius*/
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+  .ripple {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    user-select: none;
+    border-radius: 100%;
+    opacity: 0.2;
+    background-color: #f4f4f4;
+    background-clip: padding-box;
+    transform: scale(0);
+    transition: opacity .75s ease-out, -webkit-transform .75s ease-out;
+    &.held {
+      opacity: 0.4;
+      transform: scale(1);
+    }
+    &.done {
+      opacity: 0!important;
+    }
+  }
+}
